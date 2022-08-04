@@ -14,7 +14,7 @@ function sendToDiscord(color, name, message, footer)
         }
     }
 
-  PerformHttpRequest('123', function(err, text, headers) end, 'POST', json.encode({username = name, embeds = embed}), { ['Content-Type'] = 'application/json' })
+  PerformHttpRequest('WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = name, embeds = embed}), { ['Content-Type'] = 'application/json' })
 end
 
 function sendToDiscord2(color, name, message, footer)
@@ -29,7 +29,7 @@ function sendToDiscord2(color, name, message, footer)
         }
     }
 
-  PerformHttpRequest('123', function(err, text, headers) end, 'POST', json.encode({username = name, embeds = embed}), { ['Content-Type'] = 'application/json' })
+  PerformHttpRequest('WEBHOOK', function(err, text, headers) end, 'POST', json.encode({username = name, embeds = embed}), { ['Content-Type'] = 'application/json' })
 end
 
 RegisterServerEvent('huume:kerays')
